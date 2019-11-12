@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import styled from "styled-components";
 import GlobalStyle from "../src/global/GlobalStyle";
 import { ThemeProvider } from "styled-components";
-import theme from "../src/assets/theme";
+import theme from "../src/assets/themes";
 const Wrapper = styled.div`
   display: flex;
   flex: 1;

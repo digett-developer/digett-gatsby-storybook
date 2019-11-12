@@ -19,10 +19,10 @@
   "scripts": {
     "start": "run-p start:**",
     "start:gatsby": "gatsby develop -H 0.0.0.0 -o",
-    "start:storybook": "start-storybook -p 9000 -c .storybook",
+    "start:storybook": "NODE_ENV=production start-storybook -p 9000 -c .storybook",
     "build": "run-p 'build:!(storybook)'",
     "build:gatsby": "gatsby build",
-    "build:storybook": "build-storybook -c .storybook -o storybook",
+    "build:storybook": "NODE_ENV=production build-storybook -c .storybook -o storybook",
     "serve": "gatsby serve -o -p 8080",
     "clean": "gatsby clean"
   },
@@ -41,6 +41,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
+    "react-switch": "^5.0.1",
     "styled-components": "^4.3.2",
     "styled-reset-advanced": "^1.0.1",
     "styled-system": "^5.1.2"

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Header from "../components/Header/Header";
 import Layout from "../global/Layout";
 import { Heading1, TextStyle1 } from "../components/Typography/Typography";
-
+import { ThemeProvider } from "../components/ThemeContext";
 const Page = styled.div``;
 
 const IndexPage = () => (

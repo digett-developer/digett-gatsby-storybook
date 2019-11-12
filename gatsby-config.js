@@ -1,6 +1,30 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Storybook Starter"
+    title: "Gatsby Storybook Starter",
+    menu: [
+      {
+        name: "Home",
+        link: "/"
+      },
+      {
+        name: "About",
+        link: "/about",
+        submenu: [
+          {
+            name: "Submenu Item 1",
+            link: "/submenuitem1"
+          },
+          {
+            name: "Submenu Item 2",
+            link: "/submenuitem2"
+          }
+        ]
+      },
+      {
+        name: "Contact",
+        link: "/contact"
+      }
+    ]
   },
   plugins: [
     {

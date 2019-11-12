@@ -1,6 +1,6 @@
 import React from "react";
 import DynamicComponent from "../DynamicComponent";
-import theme from "../../assets/theme";
+import theme from "../../assets/themes";
 
 const { heading1, textStyle1 } = theme.textStyles;
 
