@@ -2,6 +2,7 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import Logo from "./Logo";
 import themes from "../../assets/themes";
+
 const themeDark = {
   name: "dark"
 };
