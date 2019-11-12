@@ -22,7 +22,7 @@
     "start:storybook": "NODE_ENV=production start-storybook -p 9000 -c .storybook",
     "build": "run-p 'build:!(storybook)'",
     "build:gatsby": "gatsby build",
-    "build:storybook": "NODE_ENV=production build-storybook -c .storybook -o storybook",
+    "build:storybook": "build-storybook -c .storybook -o storybook",
     "serve": "gatsby serve -o -p 8080",
     "clean": "gatsby clean"
   },
