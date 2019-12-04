@@ -3,5 +3,5 @@
   publish = "public"
 
 [context.storybook]
-  command = "yarn build"
+  command = "yarn build:gatsby && yarn build:storybook"
   publish = "storybook"
