@@ -1,9 +1,9 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
-import Logo from "../Logo/Logo";
-import { StaticQuery, graphql } from "gatsby";
-import { Link } from "gatsby";
+import React from 'react';
+import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
+// import Logo from "../Logo/Logo";
+import { StaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 
 const MenuStyled = styled.header`
   width: calc(100% - 250px);
@@ -18,7 +18,7 @@ const MenuStyled = styled.header`
         font-size: 22px;
         color: ${props => props.themes.color.black};
         ${props =>
-          props.theme.name == "dark" &&
+          props.theme.name == 'dark' &&
           css`
             color: ${props => props.themes.color.white};
           `};
@@ -79,7 +79,6 @@ const Menu = ({ data, theme, themes }) => (
         </li>
       ))}
     </ul>
-    {console.log(data)}
   </MenuStyled>
 );
 
@@ -104,7 +103,3 @@ export default props => (
     render={data => <Menu data={data} {...props} />}
   />
 );
-
-// Header.propTypes = {
-//   light: PropTypes.bool
-// };

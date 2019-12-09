@@ -1,11 +1,11 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
-import Logo from "../Logo/Logo";
-import Switch from "react-switch";
-import sunIcon from "../../assets/images/sun.svg";
-import moonIcon from "../../assets/images/moon.svg";
-import Menu from "../Menu/Menu";
+import React from 'react';
+import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
+import Logo from '../Logo/Logo';
+import Switch from 'react-switch';
+import sunIcon from '../../assets/images/sun.svg';
+import moonIcon from '../../assets/images/moon.svg';
+import Menu from '../Menu/Menu';
 
 const HeaderStyled = styled.header`
   display: flex;
@@ -16,7 +16,7 @@ const HeaderStyled = styled.header`
   padding: 20px 30px;
   height: 120px;
   ${props =>
-    props.theme.name == "dark" &&
+    props.theme.name == 'dark' &&
     css`
       background: ${props => props.themes.color.purple};
     `}
@@ -27,10 +27,8 @@ const Header = ({ theme, themes }) => (
     <Logo theme={theme} themes={themes} />
     <Menu theme={theme} themes={themes}></Menu>
     <Switch
-      onChange={() =>
-        theme.updateTheme(theme.name === "light" ? "dark" : "light")
-      }
-      checked={theme.name === "dark"}
+      onChange={() => theme.updateTheme(theme.name === 'light' ? 'dark' : 'light')}
+      checked={theme.name === 'dark'}
       onColor="#222"
       offColor="#333"
       checkedIcon={<img src={moonIcon} alt="moon icon" />}
