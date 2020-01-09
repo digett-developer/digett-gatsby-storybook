@@ -35,6 +35,14 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
+      resolve: 'gatsby-source-storyblok',
+      options: {
+        accessToken: 'iWJ8FY7unOE7sPVb8ySNJQtt',
+        homeSlug: 'home',
+        version: 'draft',
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'pages',

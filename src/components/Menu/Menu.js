@@ -16,11 +16,11 @@ const MenuStyled = styled.header`
       margin-left: 40px;
       a {
         font-size: 22px;
-        color: ${props => props.themes.color.black};
+        color: ${props => props.themes.light.darkGray};
         ${props =>
           props.theme.name == 'dark' &&
           css`
-            color: ${props => props.themes.color.white};
+            color: #ffffff;
           `};
       }
     }

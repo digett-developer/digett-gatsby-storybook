@@ -12,14 +12,8 @@ const HeaderStyled = styled.header`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background: ${props => props.themes.color.lightGray};
   padding: 20px 30px;
   height: 120px;
-  ${props =>
-    props.theme.name == 'dark' &&
-    css`
-      background: ${props => props.themes.color.purple};
-    `}
 `;
 
 const Header = ({ theme, themes }) => (
