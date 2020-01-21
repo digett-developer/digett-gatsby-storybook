@@ -1,7 +1,6 @@
 import React from 'react';
 import Components from './components.js';
 import Layout from '../global/Layout';
-import { Heading1, TextStyle1 } from '../components/Typography/Typography';
 import styled from 'styled-components';
 
 const BlogPostStyle = styled.div`
@@ -38,7 +37,7 @@ const BlogPost = props => (
   <Layout>
     <BlogPostStyle>
       {props.blok.Image && <img className="blog-image" src={props.blok.Image} />}
-      {props.blok.title && <Heading1 tag="h1">{props.blok.title}</Heading1>}
+      {props.blok.title && <h1>{props.blok.title}</h1>}
       {props.blok.excerpt && <div className="blog-excerpt">{props.blok.excerpt}</div>}
       {props.blok.body && (
         <TextStyle1
